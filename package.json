@@ -1,0 +1,16 @@
+{
+  "name": "recomeng",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "akin.park@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1",
+    "ug": "0.0.8"
+  }
+}
