@@ -28,6 +28,12 @@ app.get('/', function (req, res) {
       },
       {
           user_id: 3
+      },
+      {
+          user_id: 4
+      },
+      {
+          user_id: 5
       }
   ];
   var listings = [
@@ -42,6 +48,21 @@ app.get('/', function (req, res) {
       },
       {
           listing_id: 14
+      },
+      {
+          listing_id: 15
+      },
+      {
+          listing_id: 16
+      },
+      {
+          listing_id: 17
+      },
+      {
+          listing_id: 18
+      },
+      {
+          listing_id: 19
       }
   ];
   var views = [
@@ -51,27 +72,39 @@ app.get('/', function (req, res) {
       },
       {
           user_id: 1,
-          listing_id: 13
+          listing_id: 11
+      },
+      {
+          user_id: 1,
+          listing_id: 12
       }
   ];
   var favorites = [
       {
-          user_id: 0,
-          listing_id: 11
+          user_id: 2,
+          listing_id: 14
       },
       {
-          user_id: 1,
-          listing_id: 13
+          user_id: 3,
+          listing_id: 14
+      },
+      {
+          user_id: 3,
+          listing_id: 15
       }
   ]
   var requests = [
       {
-          user_id: 0,
-          listing_id: 11
+          user_id: 4,
+          listing_id: 17
       },
       {
-          user_id: 1,
-          listing_id: 13
+          user_id: 5,
+          listing_id: 17
+      },
+      {
+          user_id: 5,
+          listing_id: 18
       }
   ]
 
@@ -113,7 +146,7 @@ app.get('/', function (req, res) {
   });
 
   // save graph
-  graph.save('C:/Users/Akshit.Sawhney/Downloads/path_to_saved_graph.ugd', function() {
+  graph.save('C:/Users/Akshit.Sawhney/Desktop/recommEng/recommEng/saved_graph.ugd', function() {
 
     console.log("DONE SUCCESSFULLY");
 
