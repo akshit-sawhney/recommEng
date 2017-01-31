@@ -10,13 +10,12 @@ app.get('/', function (req, res) {
 
       // get the closest 100 'listings' nodes, at a minimum depth (distance) of 3
     //   console.log(graph);
-      var node =  graph.nodes('user').query().filter({user_id: 0}).first()
+      var node =  graph.nodes('user').query().filter({user_id: 4}).first()
       var results = graph.closest(node, {
         compare: function(node) { return node.entity === 'listing'; },
         minDepth: 3,
         count: 100
       });
-      console.log(results);
 
       // results is now an array of Paths, which are each traces from your starting node to your result node...
       var resultNodes = results.map(function(path) {
